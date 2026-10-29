@@ -1,6 +1,6 @@
-## STAF: Sequence-Topology Alignment and Fusion for Protein Function Prediction via Protein-GO Contrastive Learning
+## STFA: Sequence-Topology Fusion and Protein-GO Alignment with Hybrid Deep-Statistical Learning for Protein Function Prediction
 
-STAF is a computational framework designed for large-scale automated protein function prediction. It natively integrates sequence information, protein-protein interaction (PPI) network topologies, and hierarchical Gene Ontology (GO) terms using a dual-branch graph encoder, contrastive learning, and an XGBoost-based auxiliary supervision mechanism. 
+STFA is a computational framework designed for large-scale automated protein function prediction. It natively integrates sequence information, protein-protein interaction (PPI) network topologies, and hierarchical Gene Ontology (GO) terms using a dual-branch graph encoder, contrastive learning, and an XGBoost-based auxiliary supervision mechanism. 
 
 ## Prerequisites
 
