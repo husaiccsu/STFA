@@ -24,7 +24,7 @@ The script expects specific datasets and pre-trained models to be placed in dedi
 
 Before training the main STAF model, you must generate the protein sequence features using the pre-trained ESM language models.
 
-1.  Open `STAF.py` and uncomment the feature extraction functions `extract_ppi_protein_features("esm1b")` and `extract_ppi_protein_features("esm2_3b")` within the data loading sections if you are running this for the first time.
+1.  Open `STFA.py` and uncomment the feature extraction functions `extract_ppi_protein_features("esm1b")` and `extract_ppi_protein_features("esm2_3b")` within the data loading sections if you are running this for the first time.
 2.  The script will automatically tokenize the sequences, generate residue-level representations, and save the pooled features as `.npz` files in the `./data/` directory to speed up future runs.
 
 ## Training and Evaluation
@@ -33,7 +33,7 @@ The core script is configured to perform a standard 10-fold cross-validation ove
 
 1.  Execute the main Python script to start the pipeline:
     ```bash
-    python STAF.py
+    python STFA.py
     ```
 2.  The framework will automatically split the nodes into ten mutually exclusive subsets to prevent information leakage.
 3.  The model optimizes a joint objective combining Asymmetric Loss (ASL) for hard label supervision, XGBoost-generated probabilities for soft supervision, and a multi-positive InfoNCE loss for contrastive learning.
